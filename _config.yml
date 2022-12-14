@@ -1,0 +1,84 @@
+##########################################################################################
+# JEKYLL SITE SETTINGS
+##########################################################################################
+
+title: Safer Federal Workforce
+email: SaferFederalWorkforce@gsa.gov
+description: >- # this means to ignore newlines until "baseurl:"
+  Learn about the Safer Federal Workforce Task Force and how federal agencies can implement
+  the Executive Order on Protecting the Federal Workforce during the COVID-19 pandemic.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://www.SaferFederalWorkforce.gov" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Twitter handle. Only the handle, not the URL.
+#twitter: YourTwitterHandle
+
+# Digital Analytics Program (DAP)
+dap:
+  agency: GSA
+  subagency: SaferFederalWorkforceTaskForce
+
+# Configuration for Google Analytics
+ga:
+  ua: G-6BVGKEQVMG
+
+# Search.gov configuration
+searchgov:
+  endpoint: https://search.usa.gov  # You should not change this.
+  affiliate: sfw
+  access_key: Z9HImZxhu_7RpoY9_2Jd3M1xIofk6orwv-u1aOPnvfI=
+  inline: true  # this renders the results within the page instead of sending to user to search.gov
+
+collections:
+  faq:
+    output: true
+    permalink: /:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: safetyarea
+    values:
+      layout: areanav
+
+permalink: pretty
+
+markdown: kramdown
+
+plugins:
+  - jekyll-feed
+  - jekyll-last-modified-at
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-include-cache
+
+include: 
+  - downloads
+
+exclude:
+  - .jekyll-cache
+  - .github
+  - node_modules
+  - vendor
+  - Dockerfile
+  - docker-compose.yml
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - package-lock.json
+  - README.md
+  - CONTRIBUTING.md
+  - LICENSE.md
+
+assets:
+  sources:
+    - node_modules/uswds/dist/img
+    - node_modules/uswds/dist/js
+    - node_modules/uswds/dist/scss
+
+autoprefixer:
+  browsers:
+    - last 2 versions
+    - "> 2%"
+    - IE 11
+    - not dead

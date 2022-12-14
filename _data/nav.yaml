@@ -1,0 +1,47 @@
+# Site Navigation
+primary:
+  - name: Home
+    url: /
+  - name: Overview
+    url: /overview/
+  - name: FAQs
+    url: /faq/
+  - name: For Federal Contractors
+    url: /contractors/
+  - name: What's New?
+    url: /new/
+
+mobile:
+  - href: /
+  - text: Overview
+    href: /overview/
+  - text: FAQs
+    href: /faq/
+    collapsible: true
+  - text: For Federal Contractors
+    href: /contractors/
+  - text: What's New?
+    href: /new/
+
+# Categories
+faq:
+  - text: Overview
+    href: /faq/
+  - href: /faq/building-ops/
+  - text: Contractors
+    href: /faq/contractors/
+  - href: /faq/exceptions/
+  - href: /faq/facilities/
+  - text: Labor Relations
+    href: /faq/labor-relations/
+  - href: /faq/leave/
+  - href: /faq/local/
+  - href: /faq/mask-wearing/
+  - href: /faq/quarantine-and-isolation/
+  - href: /faq/signage/
+  - href: /faq/screening/
+  - href: /faq/testing/
+  - text: Travel
+    href: /faq/travel/
+  - href: /faq/vaccinations/
+  - href: /faq/visitors/

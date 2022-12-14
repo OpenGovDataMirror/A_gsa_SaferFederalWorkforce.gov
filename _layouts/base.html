@@ -1,0 +1,16 @@
+{% comment %}
+This is used for just about every page. It provides the border around the content.
+The home page uses wide.html layout, since it extends full width of page
+{% endcomment %}
+
+<!DOCTYPE html>
+<html lang="en">
+{% include meta.html %}
+<body>
+  {% include scripts-body.html %}
+  {% include_cached banner.html %}
+  {% include navbar.html primary=site.data.nav.primary %}
+  {{ content }}
+  {% include_cached footer.html %}
+</body>
+</html>
